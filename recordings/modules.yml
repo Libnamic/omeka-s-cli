@@ -1,0 +1,329 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /root
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 147
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 35
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 83
+    content: "\e[?2004hlibnamic@dev-omeka-s-d68df4bfb-pqsx7:/var/www/html$ "
+  - delay: 146
+    content: o
+  - delay: 98
+    content: m
+  - delay: 110
+    content: e
+  - delay: 121
+    content: 'ka-s-cli '
+  - delay: 147
+    content: m
+  - delay: 97
+    content: o
+  - delay: 109
+    content: d
+  - delay: 98
+    content: u
+  - delay: 107
+    content: l
+  - delay: 88
+    content: e
+  - delay: 58
+    content: ' '
+  - delay: 122
+    content: l
+  - delay: 123
+    content: i
+  - delay: 66
+    content: s
+  - delay: 110
+    content: t
+  - delay: 94
+    content: "\r\n\e[?2004l\r"
+  - delay: 119
+    content: " _______________________________________________________________________________________________________________________________________________\r\n/ id                            name                                                          state                  version  upgrade_available  \\\r\n|_______________________________________________________________________________________________________________________________________________ |\r\n| AdvancedResourceTemplate      Advanced Resource Template                                    not_installed          3.4.24   up to date         |\r\n| AdvancedSearchPlus            Advanced Search Plus (archived, replaced by Advanced Search)  invalid_omeka_version  3.3.5.7  up to date         |\r\n| AltText                       Alt Text                                                      invalid_omeka_version  1.3.0    up to date         |\r\n| AnyCloud                      Any Cloud                                                     not_installed          3.0.0    up to date         |\r\n| CustomVocab                   Custom Vocab                                                  not_installed          2.0.1    up to date         |\r\n| DataCleaning                  Data Cleaning                                                 not_installed          1.1.0    up to date         |\r\n| FacetedBrowse                 Faceted Browse                                                active                 1.3.1    up to date         |\r\n| GHIBlocks                     GHI Blocks                                                    not_installed          1.0.0                       |\r\n| GeneralizeFields              Generalize Fields                                             not_active             0.9.0                       |\r\n| GoogleAnalytics               Google Analytics                                              active                 1.3      up to date         |\r\n| LibnamicAdminHide             Libnamic Admin Hide                                           not_active             1.0.0                       |\r\n| LibnamicAdvancedThemeOptions  Libnamic Advanced Theme Options                               active                 1.0.0                       |\r\n| LibnamicSuiteAdministrator    Libnamic Suite Administrator                                  active                 1.0.0                       |\r\n| LibnamicSuiteBuilder          Libnamic Suite Builder                                        active                 1.0.0                       |\r\n| LibnamicSuiteTranslations     Libnamic Suite Translations                                   not_installed          1.4.0                       |\r\n| Mapping                       Mapping                                                       active                 1.9.0    up to date         |\r\n| PwaSettings                   PWA Settings                                                  not_installed          1.0.0                       |\r\n| RestrictedSites               RestrictedSites                                               not_installed          2.3      up to date         |\r\n| __FacetedBrowse               Faceted Browse                                                not_installed          1.1.1                       |\r\n| libnamic                      libnamic                                                      invalid_ini                                        |\r\n\\________________________________________________________________________________________________________________________________________________/\r\n"
+  - delay: 6
+    content: "\e[?2004hlibnamic@dev-omeka-s-d68df4bfb-pqsx7:/var/www/html$ "
+  - delay: 166
+    content: omeka-s-cli module list
+  - delay: 124
+    content: "\b \b"
+  - delay: 131
+    content: "\b \b"
+  - delay: 121
+    content: "\b \b"
+  - delay: 194
+    content: "\b \b"
+  - delay: 166
+    content: d
+  - delay: 159
+    content: o
+  - delay: 141
+    content: w
+  - delay: 121
+    content: 'n'
+  - delay: 143
+    content: l
+  - delay: 183
+    content: o
+  - delay: 127
+    content: a
+  - delay: 81
+    content: d
+  - delay: 173
+    content: ' '
+  - delay: 159
+    content: "\e[7mCSVImport\e[27m"
+  - delay: 181
+    content: "\b\b\b\b\b\b\b\b\bCSVImport\r\n\e[?2004l\r"
+  - delay: 114
+    content: "\e[?2004hlibnamic@dev-omeka-s-d68df4bfb-pqsx7:/var/www/html$ "
+  - delay: 333
+    content: omeka-s-cli module download CSVImport
+  - delay: 136
+    content: "\b"
+  - delay: 156
+    content: "\b\b\b\b\b\b\b\b"
+  - delay: 164
+    content: "\b"
+  - delay: 183
+    content: "\b\e[1P"
+  - delay: 158
+    content: "\b\e[1P"
+  - delay: 160
+    content: "\b\e[1P"
+  - delay: 148
+    content: "\b\e[1P"
+  - delay: 157
+    content: "\b\e[1P"
+  - delay: 156
+    content: "\b\e[1P"
+  - delay: 189
+    content: "\b\e[1P"
+  - delay: 123
+    content: "\b\e[1P"
+  - delay: 186
+    content: "\e[1@i"
+  - delay: 101
+    content: "\e[1@n"
+  - delay: 120
+    content: "\e[1@s"
+  - delay: 112
+    content: "\e[1@t"
+  - delay: 181
+    content: "\e[1@a"
+  - delay: 83
+    content: "\e[1@l"
+  - delay: 147
+    content: "\e[1@l"
+  - delay: 196
+    content: "\r\n\e[?2004l\r"
+  - delay: 130
+    content: "\e[?2004hlibnamic@dev-omeka-s-d68df4bfb-pqsx7:/var/www/html$ "
+  - delay: 153
+    content: omeka-s-cli module install CSVImport
+  - delay: 185
+    content: "\b\b\b\b\b\b\b\b\b"
+  - delay: 198
+    content: "\b"
+  - delay: 152
+    content: "\b\e[1P"
+  - delay: 138
+    content: "\b\e[1P"
+  - delay: 166
+    content: "\b\e[1P"
+  - delay: 151
+    content: "\b\e[1P"
+  - delay: 181
+    content: "\b\e[1P"
+  - delay: 119
+    content: "\b\e[1P"
+  - delay: 132
+    content: "\b\e[1P"
+  - delay: 115
+    content: "\e[1@s"
+  - delay: 130
+    content: "\e[1@t"
+  - delay: 190
+    content: "\e[1@a"
+  - delay: 183
+    content: "\e[1@t"
+  - delay: 112
+    content: "\e[1@u"
+  - delay: 124
+    content: "\e[1@s"
+  - delay: 181
+    content: "\r\n\e[?2004l\r"
+  - delay: 209
+    content: " _______________________________________________________________________________________________________________________\r\n/ id         name        state   version  upgrade_available  moduleFilePath                              isConfigurable  \\\r\n|_______________________________________________________________________________________________________________________ |\r\n| CSVImport  CSV Import  active  2.4.1                       /var/www/html/modules/CSVImport/Module.php  false           |\r\n\\________________________________________________________________________________________________________________________/\r\n"
+  - delay: 6
+    content: "\e[?2004hlibnamic@dev-omeka-s-d68df4bfb-pqsx7:/var/www/html$ "
+  - delay: 113
+    content: omeka-s-cli module status CSVImport
+  - delay: 155
+    content: "\b \b"
+  - delay: 122
+    content: "\b \b"
+  - delay: 16
+    content: "\b \b"
+  - delay: 29
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 29
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 26
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 28
+    content: "\b \b"
+  - delay: 31
+    content: "\b \b"
+  - delay: 430
+    content: "\b \b"
+  - delay: 128
+    content: "\b \b"
+  - delay: 144
+    content: "\b \b"
+  - delay: 183
+    content: "\b \b"
+  - delay: 152
+    content: "\b \b"
+  - delay: 192
+    content: u
+  - delay: 130
+    content: p
+  - delay: 104
+    content: d
+  - delay: 133
+    content: a
+  - delay: 136
+    content: t
+  - delay: 122
+    content: e
+  - delay: 92
+    content: ' '
+  - delay: 191
+    content: '-'
+  - delay: 119
+    content: '-'
+  - delay: 141
+    content: a
+  - delay: 115
+    content: l
+  - delay: 122
+    content: l
+  - delay: 130
+    content: "\r\n\e[?2004l\r"
+  - delay: 100
+    content: "\e[?2004hlibnamic@dev-omeka-s-d68df4bfb-pqsx7:/var/www/html$ "
+  - delay: 119
+    content: "\e[?2004l\r\r\nlogout\r\n"

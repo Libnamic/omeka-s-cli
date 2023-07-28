@@ -1,0 +1,219 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /root
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 147
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 35
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 1000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 304
+    content: "\e[?2004hlibnamic@dev-omeka-s-d68df4bfb-pqsx7:/var/www/html$ "
+  - delay: 158
+    content: c
+  - delay: 184
+    content: d
+  - delay: 140
+    content: ' '
+  - delay: 128
+    content: /
+  - delay: 126
+    content: o
+  - delay: 139
+    content: p
+  - delay: 179
+    content: t
+  - delay: 272
+    content: "\r\n\e[?2004l\r\e[?2004hroot@dev-omeka-s-d68df4bfb-pqsx7:/opt# "
+  - delay: 504
+    content: g
+  - delay: 105
+    content: i
+  - delay: 162
+    content: t
+  - delay: 99
+    content: ' '
+  - delay: 125
+    content: c
+  - delay: 88
+    content: l
+  - delay: 129
+    content: o
+  - delay: 124
+    content: 'n'
+  - delay: 117
+    content: e
+  - delay: 123
+    content: ' '
+  - delay: 194
+    content: "\e[7mhttps://github.com/Libnamic/omeka-s-cli\e[27m"
+  - delay: 609
+    content: "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\bhttps://github.com/Libnamic/omeka-s-cli\r\n\e[?2004l\rCloning into 'omeka-s-cli'...\r\n"
+  - delay: 487
+    content: "remote: Enumerating objects: 17, done.\e[K\r\nremote: Counting objects:   5% (1/17)\e[K\rremote: Counting objects:  11% (2/17)\e[K\rremote: Counting objects:  17% (3/17)\e[K\rremote: Counting objects:  23% (4/17)\e[K\rremote: Counting objects:  29% (5/17)\e[K\rremote: Counting objects:  35% (6/17)\e[K\rremote: Counting objects:  41% (7/17)\e[K\rremote: Counting objects:  47% (8/17)\e[K\rremote: Counting objects:  52% (9/17)\e[K\rremote: Counting objects:  58% (10/17)\e[K\rremote: Counting objects:  64% (11/17)\e[K\rremote: Counting objects:  70% (12/17)\e[K\rremote: Counting objects:  76% (13/17)\e[K\rremote: Counting objects:  82% (14/17)\e[K\rremote: Counting objects:  88% (15/17)\e[K\rremote: Counting objects:  94% (16/17)\e[K\rremote: Counting objects: 100% (17/17)\e[K\rremote: Counting objects: 100% (17/17), done.\e[K\r\nremote: Compressing objects:   7% (1/14)\e[K\rremote: Compressing objects:  14% (2/14)\e[K\rremote: Compressing objects:  21% (3/14)\e[K\rremote: Compressing objects:  28% (4/14)\e[K\rremote: Compressing objects:  35% (5/14)\e[K\rremote: Compressing objects:  42% (6/14)\e[K\rremote: Compressing objects:  50% (7/14)\e[K\rremote: Compressing objects:  57% (8/14)\e[K\rremote: Compressing objects:  64% (9/14)\e[K\rremote: Compressing objects:  71% (10/14)\e[K\rremote: Compressing objects:  78% (11/14)\e[K\rremote: Compressing objects:  85% (12/14)\e[K\rremote: Compressing objects:  92% (13/14)\e[K\rremote: Compressing objects: 100% (14/14)\e[K\rremote: Compressing objects: 100% (14/14), done.\e[K\r\nReceiving objects:   5% (1/17)\rReceiving objects:  11% (2/17)\rReceiving objects:  17% (3/17)\r"
+  - delay: 5
+    content: "remote: Total 17 (delta 2), reused 14 (delta 2), pack-reused 0\e[K\r\nReceiving objects:  23% (4/17)\rReceiving objects:  29% (5/17)\rReceiving objects:  35% (6/17)\rReceiving objects:  41% (7/17)\rReceiving objects:  47% (8/17)\rReceiving objects:  52% (9/17)\rReceiving objects:  58% (10/17)\rReceiving objects:  64% (11/17)\rReceiving objects:  70% (12/17)\rReceiving objects:  76% (13/17)\rReceiving objects:  82% (14/17)\rReceiving objects:  88% (15/17)\rReceiving objects:  94% (16/17)\rReceiving objects: 100% (17/17)\rReceiving objects: 100% (17/17), 22.55 KiB | 4.51 MiB/s, done.\r\nResolving deltas:   0% (0/2)\rResolving deltas:  50% (1/2)\rResolving deltas: 100% (2/2)\rResolving deltas: 100% (2/2), done.\r\n"
+  - delay: 8
+    content: "\e[?2004hroot@dev-omeka-s-d68df4bfb-pqsx7:/opt# "
+  - delay: 455
+    content: l
+  - delay: 132
+    content: 'n'
+  - delay: 156
+    content: ' '
+  - delay: 147
+    content: '-'
+  - delay: 146
+    content: s
+  - delay: 115
+    content: ' '
+  - delay: 149
+    content: "\e[7m/opt/omeka-s-cli/omeka-s-cli.php\e[27m"
+  - delay: 250
+    content: "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b/opt/omeka-s-cli/omeka-s-cli.php "
+  - delay: 117
+    content: /
+  - delay: 183
+    content: u
+  - delay: 139
+    content: s
+  - delay: 111
+    content: r
+  - delay: 148
+    content: /
+  - delay: 109
+    content: b
+  - delay: 122
+    content: i
+  - delay: 138
+    content: 'n'
+  - delay: 191
+    content: /
+  - delay: 170
+    content: o
+  - delay: 169
+    content: m
+  - delay: 110
+    content: e
+  - delay: 83
+    content: k
+  - delay: 95
+    content: a
+  - delay: 120
+    content: '-'
+  - delay: 168
+    content: s
+  - delay: 191
+    content: '-'
+  - delay: 130
+    content: c
+  - delay: 78
+    content: l
+  - delay: 164
+    content: i
+  - delay: 8
+    content: "\n\e[?2004hroot@dev-omeka-s-d68df4bfb-pqsx7:/opt# "

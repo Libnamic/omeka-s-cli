@@ -144,8 +144,8 @@ $subcommands = [
                     'id' => $module['id'],
                     'name' => $module['name'],
                     'state' => $module['state'],
-                    'version' => ($module['db']['version']==$module['ini']['version']||!$module['db']['version'])?$module['ini']['version']:($module['ini']['version'].' ('.$module['db']['version'].' in database)'),
-                    'upgrade_available' => ($module['ini']?($module['ini']['version']!=$module['api']['latest_version']?$module['api']['latest_version']:'up to date'):''),
+                    'version' => ($module['db']['version']==$module['ini']['version']||!$module['db']['version'])?$module['ini']['version']:($module['ini']['version'].' ('.$module['db']['version'].' in database)')??'',
+                    'upgrade_available' => ($module['ini']?($module['ini']['version']!=$module['api']['latest_version']?$module['api']['latest_version']:'up to date'):'')??'',
 
                 ];
             }
@@ -418,8 +418,8 @@ $subcommands = [
                 'id' => $module->getId(),
                 'name' => $module->getName(),
                 'state' => $module->getState(),
-                'version' => ($module->getDb()['version']==$module->getIni()['version']||!$module->getDb()['version'])?$module->getIni()['version']:($module->getIni()['version'].' ('.$module->getDb()['version'].' in database)'),
-                'upgrade_available' => ($module->getIni()?($module->getIni()['version']!=$api_modules[$key]['latest_version']?$api_modules[$key]['latest_version']:'up to date'):''),
+                'version' => ($module->getDb()['version']==$module->getIni()['version']||!$module->getDb()['version'])?$module->getIni()['version']:($module->getIni()['version'].' ('.$module->getDb()['version'].' in database)')??'',
+                'upgrade_available' => ($module->getIni()?($module->getIni()['version']!=$api_modules[$key]['latest_version']?$api_modules[$key]['latest_version']:'up to date'):'')??'',
                 'moduleFilePath' => $module->getModuleFilePath(),
                 'isConfigurable' => $module->isConfigurable(),
             ]], $format);

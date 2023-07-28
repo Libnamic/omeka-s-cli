@@ -1,0 +1,201 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /root
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 182
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 43
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 285
+    content: "\e[?2004hlibnamic@dev-omeka-s-d68df4bfb-pqsx7:/var/www/html$ "
+  - delay: 854
+    content: o
+  - delay: 180
+    content: m
+  - delay: 82
+    content: e
+  - delay: 139
+    content: 'ka-s-cli '
+  - delay: 804
+    content: t
+  - delay: 126
+    content: h
+  - delay: 106
+    content: e
+  - delay: 117
+    content: m
+  - delay: 48
+    content: e
+  - delay: 98
+    content: ' '
+  - delay: 134
+    content: l
+  - delay: 200
+    content: i
+  - delay: 51
+    content: s
+  - delay: 179
+    content: t
+  - delay: 385
+    content: "\r\n\e[?2004l\r"
+  - delay: 737
+    content: " _______________________________________________________________________________________________________________________________________________________________________________\r\n/ id                       name                                       state                  version  author                            Libnamic child theme  upgrade_available  \\\r\n|_______________________________________________________________________________________________________________________________________________________________________________ |\r\n| omeka-basic-theme        BASIC Customize Internal Use               invalid_omeka_version  1.6.0    Libnamic Team Theme               false                                    |\r\n| pack-theme               Packing theme                              invalid_omeka_version  1.0.0    Libnamic Team Theme               false                                    |\r\n| Omeka-S-Bootstrap-Theme  Libnamic boostrap                          active                 1        Libnamic                          false                                    |\r\n| bootstrap Libnamic       Libnamic boostrap                          active                 1        Libnamic                          false                                    |\r\n| pruebarara               Prueba rara 1                              invalid_omeka_version  1.0.0    Libnamic                          false                                    |\r\n| pruebarara2              Prueba rara 2                              invalid_omeka_version  1.0.0    Libnamic                          false                                    |\r\n| default-opciones         Default opciones                           invalid_omeka_version  1.6.3    Libnamic Team                     false                                    |\r\n| Multilingual             Multilingual                               invalid_omeka_version  2.0      Ivy Rose for arepr.org            false                 up to date         |\r\n| libnamic                 Libnamic                                   active                 0.1      Libnamic                          false                                    |\r\n| tema-hijo-vista-item     Prueba tema hijo con vista de item show 1  active                 1.0.0    Libnamic                          true                                     |\r\n| tema-hijo-vista-item2    Prueba tema hijo con vista de item show 2  active                 1.0.0    Libnamic                          true                                     |\r\n| default                  Default                                    active                 1.7.2    Omeka Team                        false                 up to date         |\r\n| bookshelf                Bookshelf                                  active                 2.0.1    Indic Digital Archive Foundation  false                 up to date         |\r\n| centerrow                Center Row                                 active                 1.8.2    Omeka Team                        false                 up to date         |\r\n| papers                   Papers                                     active                 1.4.2    Omeka Team                        false                 up to date         |\r\n| thanksroy                Thanks, Roy                                active                 1.1.3    Omeka Team                        false                 up to date         |\r\n| thedaily                 The Daily                                  active                 1.7.1    Omeka Team                        false                 up to date         |\r\n| cozy                     Cozy                                       active                 1.6.1    Omeka Team                        false                 up to date         |\r\n\\________________________________________________________________________________________________________________________________________________________________________________/\r\n"
+  - delay: 8
+    content: "\e[?2004hlibnamic@dev-omeka-s-d68df4bfb-pqsx7:/var/www/html$ "
+  - delay: 2796
+    content: omeka-s-cli theme list
+  - delay: 987
+    content: "\b\b\b\b"
+  - delay: 804
+    content: "\e[1P"
+  - delay: 154
+    content: "\e[1P"
+  - delay: 144
+    content: "\e[1Pt\b"
+  - delay: 148
+    content: "\e[K"
+  - delay: 150
+    content: "\a"
+  - delay: 295
+    content: "\a"
+  - delay: 176
+    content: "\a"
+  - delay: 303
+    content: d
+  - delay: 169
+    content: e
+  - delay: 109
+    content: l
+  - delay: 84
+    content: e
+  - delay: 152
+    content: t
+  - delay: 110
+    content: e
+  - delay: 127
+    content: ' '
+  - delay: 1158
+    content: c
+  - delay: 72
+    content: o
+  - delay: 166
+    content: z
+  - delay: 86
+    content: 'y'
+  - delay: 444
+    content: "\r\n\e[?2004l\r"
+  - delay: 149
+    content: "\e[?2004hAre you sure that you want to delete the directory \"/var/www/html/themes/cozy\" and its contents? > "
+  - delay: 1459
+    content: 'y'
+  - delay: 1580
+    content: "\r\n\e[?2004l\r"
+  - delay: 11
+    content: "\e[?2004hlibnamic@dev-omeka-s-d68df4bfb-pqsx7:/var/www/html$ "
+  - delay: 5539
+    content: "\e[?2004l\r\r\nlogout\r\n"

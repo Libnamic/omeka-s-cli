@@ -1,8 +1,8 @@
 #!/usr/local/bin/php -d xdebug.log_level=0
 <?php
 require 'includes.php';
-// #!/usr/bin/env php
 
+#!/usr/bin/env php
 
 if($argc<2){
     echo("No command specified. ");
